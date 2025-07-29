@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .animation{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transform: rotate(30deg);
+            transform: scale(10);
+            transform: scaleX(3);
+            transform: scaleY(10);
+            transform: translateX(30px);
+            transform: translateY(45px);
+        } */
+          .box{ 
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+         }
+         .box1{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation-name: new;
+            animation-duration: 4s;
+             animation-iteration-count: infinite; 
+            animation-direction: alternate; 
+            animation-timing-function: linear;
+        }
+         @keyframes new{ 
+             0%{
+                transform: translate(175px);
+            } 
+            25%{
+                transform: translate(350px,175px);
+            }
+            50%{
+                transform: translate(175px,350px);
+            }
+            75%{
+                transform: translate(0px,175px);
+            }
+            100%{
+                transform: translate(175px);
+            } 
+
+
+
+
+            /* 0%{
+                transform: translate(0px,350px);
+            }
+            20%{
+                transform: translate(175px);
+            }
+            40%{
+                transform: translate(350px,350px);
+            }
+           60%{
+                transform: translate(0px,175px);
+            }
+           80%{
+                transform: translate(350px,175px);
+            }
+            100%{
+                transform: translate(0px,350px?);
+            } */
+         /* }  */
+/*         
+         0%{
+            transform: translate(175px);
+        }
+        20%{    transform: translate(175px,175px);
+        }
+            40%{transform: translate(350px,350px);
+            }
+            60% {
+                transform: translate(0px,350px);
+            }
+            80% {
+                transform: translate(175px,175px);
+            }
+            100% {
+                transform: translate(175px);
+            } */
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
