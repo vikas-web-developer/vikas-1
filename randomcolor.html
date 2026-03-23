@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>random color </button>
+    <script>
+
+
+        const colors = [
+            '#ff0000 40%', '#00ff00', '#0000ff', '#ffff00',
+            '#ff00ff', '#00ffff', '#ff9900', '#9900ff'
+        ];
+
+        let btn = document.querySelector("button")
+        btn.addEventListener("click", () => {
+            const v = Math.floor(Math.random() * colors.length)
+            const randomColor = colors[v];
+            document.body.style.backgroundColor = randomColor;
+        })
+
+    </script>
+</body>
+
+</html>

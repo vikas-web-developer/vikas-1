@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(45deg, #49a09d, #5f2c82);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    .main {
+        text-align: center;
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .buttons .passive {
+        display: none;
+    }
+
+    .dark-mode .active {
+        display: none;
+    }
+
+    .dark-mode .passive {
+        display: block;
+    }
+
+    .dark-mode {
+        background: linear-gradient(45deg, #000000, #434343);
+        color: white;
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+
+
+
+    <div class="parent">
+
+        <div class="main">
+            <h1>vikas ki coding factory</h1>
+            <p>vikas ka toggle button</p>
+            <div class="buttons">
+                <button class="active">❤️</button>
+                <button class="passive">🕷️</button>
+            </div>
+        </div>
+        <script>
+            const toggleButton = document.querySelector('.buttons');
+            const body = document.body;
+
+            toggleButton.addEventListener('click', () => {
+    
+                body.classList.toggle('dark-mode');
+            });
+        </script>
+    </div>
+
+
+
+
+</body>
+
+</html>
